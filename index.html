@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <!-- main division -->
+    <div class="container">
+        <!-- heading -->
+        <h1>Registration Form</h1>
+        <!-- main form -->
+        <form class="myForm">
+
+            <!--FIRST NAME  -->
+            <div class="main">
+                <input type="text" class="FName" onblur="fnameOn()" onclick="fname()" onkeyup="fNameUp()" required>
+                <span for="" class="lable1">*First Name</span>   <!--first name place holder-->
+                <span class="classname1"></span>       <!----if error  will occure, it will show an error message-->
+            </div><br>
+
+            <!-- LAST NAME -->
+            <div class="main">
+                <input type="text" class="LName" onblur="lnameOn()" onclick="lnameClick()" onkeyup="lNameKeyUp()"
+                    required>
+                <span class="lable2">*Last Name</span>
+                <span class="classname2"></span>
+            </div><br>
+
+            <!-- Email -->
+            <div class="main">
+                <input type="text" class="Email" onblur="email1()" onclick="email2()" onkeyup="email3()" required>
+                <span class="lable3">*Email</span>
+                <span class="className3"></span>
+            </div><br>
+
+            <!-- Password  -->
+            <div class="main">
+                <input type="text" class="Password" onblur="password1()" onclick="password2()" onkeyup="password3()"
+                    required>
+                <span class="lable4">*Password</span>
+                <span class="className4"></span>
+            </div><br>
+
+            <!-- Confirm password -->
+            <div class="main">
+                <input type="text" class="Cpassword" onblur="Cpassword1()" onclick="Cpassword2()" onkeyup="Cpassword2()"
+                    required>
+                <span class="lable5">*Confirm Password</span>
+                <span class="className5"></span>
+            </div><br>
+
+
+            <!-- phone number  -->
+            <div class="main">
+                <input type="text" class="Phonenumber" onblur="phoneNumber1()" onclick="phoneNumber2()"
+                    onkeyup="phoneNumber3()" maxlength="10" required>
+                <span class="lable6">*Phone Number</span>
+                <span class="className6"></span>
+            </div><br>
+
+            <!-- DATE -->
+            <div class="main">
+                <input type="text" class="Date" onblur="dateValOn()" onclick="dateOn1()" onkeyup="dateOn1()" required>
+                <span class="lable7">*Date of birth</span>
+                <span class="className7"></span>
+            </div><br>
+
+            <!-- GENDER -->
+            <div class="main">
+                <select class="gender" onblur="genderOnBlur()" onclick="genderSelect()" onkeyup="genderSelect()" required>
+                    <option value="" class="option"></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+                <span class="lable8">*Select Gender</span>
+                <span class="className8"></span>
+            </div><br>
+
+            <!-- BUTTON  -->
+            <center>
+                <button class="button">Submit</button>
+            </center>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
